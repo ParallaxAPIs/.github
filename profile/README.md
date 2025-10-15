@@ -1,20 +1,12 @@
 <div align="center">
 
-<img src="logo.png" alt="Parallax Systems Logo" width="120"/>
+<img src="logo.png" alt="Parallax Systems Logo" width="80" style="display: inline-block; vertical-align: middle;"/> <h1 style="display: inline-block; vertical-align: middle; margin: 0;">Parallax Systems SDK</h1>
 
-# Parallax Systems SDK
-
-**Request-Based Anti-Bot Bypass Solution**
+**Request-based anti-bot bypass solution for DataDome, PerimeterX & CAPTCHA challenges.**
 
 [![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/2QWbHcmWnf)
 [![Website](https://img.shields.io/badge/Website-Visit-00D4FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.parallaxsystems.io)
 [![License](https://img.shields.io/badge/License-Commercial-yellow?style=for-the-badge)](https://www.parallaxsystems.io)
-
-**DataDome Bypass • PerimeterX Bypass • CAPTCHA Solver • Sub-400ms Response**
-
-<p align="center">
-  <strong>HTTP API for anti-bot cookie generation</strong> | No browser automation required
-</p>
 
 [Features](#-features) • [Installation](#-installation) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Discord](https://discord.com/invite/2QWbHcmWnf)
 
@@ -28,79 +20,169 @@ A **multi-language SDK** for bypassing anti-bot protection systems including **D
 
 Perfect for **web scraping**, **automation**, **testing**, and **bot development** that requires bypassing bot detection systems.
 
-### 📚 SDK Documentation
+![PerimeterX Demo](parallax_perimeterx.gif)
 
-[**Go**](docs/go.md) • [**TypeScript**](docs/typescript.md) • [**Python**](docs/python.md) • [**Playwright**](docs/playwright.md)
+---
 
-### 🌟 Why Choose Parallax?
+## 🔑 Getting API Access
 
-<table>
-<tr>
-<td width="50%" valign="top">
+To use the Parallax Systems SDK, you'll need an API key. We offer **free trials** to get you started.
 
-<div align="center">
+**Get your API key:**
+1. Join our [Discord](https://discord.com/invite/2QWbHcmWnf)
+2. Create a ticket
+3. Get started with your free trial
 
-**⚡ Lightning Fast**
+---
 
-</div>
+## 📦 Installation
 
-- DataDome cookies in ~200ms
-- PerimeterX cookies in ~350-400ms
-- Request-based, no browser overhead
+| Language | Install Command |
+|----------|-----------------|
+| **Go** | `go get github.com/parallaxsystems/parallax-sdk-go` |
+| **TypeScript** | `npm install parallax-sdk-ts` |
+| **Python** | `pip install parallax-sdk-py` |
+| **Playwright** | `npm install parallax-sdk-playwright` |
 
-</td>
-<td width="50%" valign="top">
+---
 
-<div align="center">
+## 🚀 Quick Start
 
-**🚀 Developer Friendly**
+### DataDome Cookie Generation
 
-</div>
+<details open>
+<summary><strong>Go Example</strong></summary>
 
-- Simple REST API
-- 4+ language SDKs
-- Comprehensive documentation
+```go
+package main
 
-</td>
-</tr>
-<tr>
-<td width="50%" valign="top">
+import (
+    "fmt"
+    "github.com/parallaxsystems/parallax-sdk-go"
+)
 
-<div align="center">
+func main() {
+    sdk := parallaxsdk.NewDatadomeSDK("YOUR_API_KEY", "")
 
-**🔒 Enterprise Security**
+    response, _ := sdk.GenerateDatadomeCookie(parallaxsdk.TaskDatadomeCookie{
+        Site:        "example",
+        Region:      "us",
+        Proxyregion: "us",
+        Proxy:       "http://user:pass@proxy:port",
+        Pd:          parallaxsdk.PD_Init,
+    })
 
-</div>
+    fmt.Printf("Cookie: %s\n", response.Message)
+}
+```
 
-- End-to-end encryption
-- SOC 2 compliant infrastructure
-- Zero data retention policy
+</details>
 
-</td>
-<td width="50%" valign="top">
+<details>
+<summary><strong>TypeScript Example</strong></summary>
 
-<div align="center">
+```typescript
+import { DatadomeSDK, ProductType } from "parallax-sdk-ts";
 
-**📦 Production Ready**
+const sdk = new DatadomeSDK({ apiKey: "YOUR_API_KEY" });
 
-</div>
+const cookie = await sdk.generateCookie({
+    site: "example",
+    region: "us",
+    proxy: "http://user:pass@proxy:port",
+    proxyregion: "us",
+    pd: ProductType.Init,
+    data: {} as any
+});
 
-- 99.9% uptime SLA
-- Scalable infrastructure
-- 24/7 support available
+console.log(cookie.message);
+```
 
-</td>
-</tr>
-</table>
+</details>
 
-### 🛠️ Supported Languages
+<details>
+<summary><strong>Python Example</strong></summary>
 
-| Language | Status | Install |
-|----------|:------:|---------|
-| ![Go](https://img.shields.io/badge/Go-00ADD8?style=flat&logo=go&logoColor=white) | ✅ | `go get parallax-sdk` |
-| ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white) | ✅ | `npm install @parallax/sdk` |
-| ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white) | ✅ | `pip install parallax-sdk` |
-| ![Playwright](https://img.shields.io/badge/Playwright-2EAD33?style=flat&logo=playwright&logoColor=white) | ✅ | `npm install @parallax/playwright-sdk` |
+```python
+from parallax_sdk_py import DatadomeSDK, ProductType
+
+sdk = DatadomeSDK(host="", api_key="YOUR_API_KEY")
+
+response = await sdk.generate_cookie(
+    site="example",
+    region="us",
+    proxy="http://user:pass@proxy:port",
+    proxyregion="us",
+    pd=ProductType.Init
+)
+
+print(response.message)
+```
+
+</details>
+
+### PerimeterX Cookie Generation
+
+<details open>
+<summary><strong>Go Example</strong></summary>
+
+```go
+pxSDK := parallax.NewPerimeterxSDK("YOUR_API_KEY", "")
+
+response, _ := pxSDK.GenerateCookies(parallax.TaskGeneratePXCookies{
+    Site:        "example",
+    Region:      "com",
+    Proxyregion: "us",
+    Proxy:       "http://user:pass@proxy:port",
+})
+
+fmt.Printf("_px3: %s\n_pxvid: %s\npxcts: %s\n",
+    response.Cookie, response.Vid, response.Cts)
+```
+
+</details>
+
+<details>
+<summary><strong>TypeScript Example</strong></summary>
+
+```typescript
+import { PerimeterxSDK } from "parallax-sdk-ts";
+
+const sdk = new PerimeterxSDK({ apiKey: "YOUR_API_KEY" });
+
+const result = await sdk.generateCookies({
+    site: "example",
+    region: "com",
+    proxy: "http://user:pass@proxy:port",
+    proxyregion: "us"
+});
+
+console.log(`_px3: ${result.cookie}\n_pxvid: ${result.vid}\npxcts: ${result.cts}`);
+```
+
+</details>
+
+<details>
+<summary><strong>Python Example</strong></summary>
+
+```python
+from src import PerimeterxSDK, TaskGeneratePXCookies
+
+sdk = PerimeterxSDK(host="", api_key="YOUR_API_KEY")
+
+task = TaskGeneratePXCookies(
+    site="example",
+    region="com",
+    proxy="http://user:pass@proxy:port",
+    proxyregion="us"
+)
+
+result = await sdk.generate_cookies(task)
+
+print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']}")
+```
+
+</details>
 
 ---
 
@@ -139,192 +221,71 @@ Perfect for **web scraping**, **automation**, **testing**, and **bot development
 </tr>
 </table>
 
-### 🎯 Use Cases
+### Use Cases
 
-- 🤖 **Web Scraping** - Bypass bot detection for data collection
-- 🧪 **Automation Testing** - Test websites protected by anti-bot systems
-- 📊 **Price Monitoring** - Monitor competitor prices without detection
-- 🔍 **SEO Tools** - Build SEO tools that work with protected sites
-- 🛒 **E-commerce Bots** - Automate purchase flows on protected platforms
-
----
-
-## 📦 Installation
-
-<details open>
-<summary><strong>Go</strong></summary>
-
-```bash
-go get github.com/yourusername/parallax-sdk
-```
-
-</details>
-
-<details>
-<summary><strong>TypeScript/JavaScript</strong></summary>
-
-```bash
-npm install @parallax/sdk
-# or
-yarn add @parallax/sdk
-# or
-pnpm add @parallax/sdk
-```
-
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```bash
-pip install parallax-sdk
-# or
-poetry add parallax-sdk
-```
-
-</details>
-
-<details>
-<summary><strong>Playwright</strong></summary>
-
-```bash
-npm install @parallax/playwright-sdk
-```
-
-</details>
+- **Web Scraping** - Bypass bot detection for data collection
+- **Automation Testing** - Test websites protected by anti-bot systems
+- **Price Monitoring** - Monitor competitor prices without detection
+- **SEO Tools** - Build SEO tools that work with protected sites
+- **E-commerce Bots** - Automate purchase flows on protected platforms
 
 ---
 
-## 🚀 Quick Start
+## Why Choose Parallax?
 
-### DataDome Cookie Generation
+<table>
+<tr>
+<td width="50%">
 
-<details open>
-<summary><strong>Go Example</strong></summary>
+### ⚡ Lightning Fast
+• DataDome cookies in **~200ms**
+• PerimeterX cookies in **~350-400ms**
+• Request-based, no browser overhead
 
-```go
-package main
+</td>
+<td width="50%">
 
-import (
-    "fmt"
-    parallax "github.com/yourusername/parallax-sdk"
-)
+### 🛠️ Developer Friendly
+• Simple REST API
+• 4+ language SDKs
+• Comprehensive documentation
 
-func main() {
-    sdk := parallax.NewSDK("YOUR_API_KEY", "")
+</td>
+</tr>
+<tr>
+<td width="50%">
 
-    response, _ := sdk.GenerateDatadomeCookie(parallax.TaskDatadomeCookie{
-        Site:        "example",
-        Region:      "us",
-        Proxyregion: "us",
-        Proxy:       "http://user:pass@proxy:port",
-        Pd:          parallax.PD_Init,
-    })
+### 🔒 Enterprise Security
+• End-to-end encryption
+• SOC 2 compliant infrastructure
+• Zero data retention policy
 
-    fmt.Printf("Cookie: %s\n", response.Message)
-}
-```
+</td>
+<td width="50%">
 
-</details>
+### 📦 Production Ready
+• 99.9% uptime SLA
+• Scalable infrastructure
+• 24/7 support available
 
-<details>
-<summary><strong>TypeScript Example</strong></summary>
-
-```typescript
-import DatadomeSDK from "@parallax/sdk/datadome";
-
-const sdk = new DatadomeSDK({ apiKey: "YOUR_API_KEY" });
-
-const cookie = await sdk.generateCookie({
-    site: "example",
-    region: "us",
-    proxy: "http://user:pass@proxy:port",
-    proxyregion: "us",
-    pd: "init",
-    data: {}
-});
-
-console.log(cookie.message);
-```
-
-</details>
-
-<details>
-<summary><strong>Python Example</strong></summary>
-
-```python
-from parallax_sdk import DatadomeSDK
-
-sdk = DatadomeSDK(api_key="YOUR_API_KEY")
-
-response = sdk.generate_cookie(
-    site="example",
-    region="us",
-    proxy="http://user:pass@proxy:port",
-    proxyregion="us",
-    pd="init"
-)
-
-print(response.message)
-```
-
-</details>
-
-### PerimeterX Cookie Generation
-
-<details open>
-<summary><strong>Go Example</strong></summary>
-
-```go
-pxSDK := parallax.NewPerimeterxSDK("YOUR_API_KEY", "")
-
-response, _ := pxSDK.GenerateCookies(parallax.TaskGeneratePXCookies{
-    Site:        "example",
-    Region:      "com",
-    Proxyregion: "us",
-    Proxy:       "http://user:pass@proxy:port",
-})
-
-fmt.Printf("_px3: %s\n_pxvid: %s\npxcts: %s\n",
-    response.Cookie, response.Vid, response.Cts)
-```
-
-</details>
-
-<details>
-<summary><strong>TypeScript Example</strong></summary>
-
-```typescript
-import PerimeterxSDK from "@parallax/sdk/perimeterx";
-
-const sdk = new PerimeterxSDK({ apiKey: "YOUR_API_KEY" });
-
-const result = await sdk.generateCookies({
-    site: "example",
-    region: "com",
-    proxy: "http://user:pass@proxy:port",
-    proxyregion: "us"
-});
-
-console.log(`_px3: ${result.cookie}\n_pxvid: ${result.vid}\npxcts: ${result.cts}`);
-```
-
-</details>
+</td>
+</tr>
+</table>
 
 ---
 
 ## 📚 Documentation
 
-### 🔧 SDK-Specific Guides
+### SDK-Specific Guides
 
 | Language | Documentation | Examples |
 |----------|---------------|----------|
-| Go | [Go SDK Guide](docs/go.md) | Complete API reference |
-| TypeScript | [TypeScript SDK Guide](docs/typescript.md) | Async/await patterns |
-| Python | [Python SDK Guide](docs/python.md) | Asyncio support |
-| Playwright | [Playwright SDK Guide](docs/playwright.md) | Browser integration |
+| Go | [Go SDK Guide](parallax-sdk-go/README.md) | Complete API reference |
+| TypeScript | [TypeScript SDK Guide](parallax-sdk-ts/README.md) | Async/await patterns |
+| Python | [Python SDK Guide](parallax-sdk-py/README.md) | Asyncio support |
+| Playwright | [Playwright SDK Guide](parallax-sdk-playwright/README.md) | Browser integration |
 
-### ���� Advanced Topics
+### Advanced Topics
 
 - **[Authentication](docs/authentication.md)** - API key management and security
 - **[Proxy Configuration](docs/proxies.md)** - Proxy setup and best practices
@@ -377,15 +338,7 @@ console.log(`_px3: ${result.cookie}\n_pxvid: ${result.vid}\npxcts: ${result.cts}
 
 ---
 
-## 🔑 Keywords
-
-**Anti-bot bypass** • **Bot detection bypass** • **DataDome bypass** • **PerimeterX bypass** • **CAPTCHA solver** • **Challenge solver** • **Cookie generator** • **Web scraping** • **Bot automation** • **WAF bypass** • **Cloudflare bypass** • **Akamai bypass** • **Automation testing** • **Headless browser alternative** • **Anti-bot protection** • **Bot mitigation bypass** • **Sensor data generation** • **Browser fingerprinting bypass**
-
----
-
 <div align="center">
-
-**Built with ❤️ by the Parallax Systems Team**
 
 © 2025 Parallax Systems. All rights reserved.
 
