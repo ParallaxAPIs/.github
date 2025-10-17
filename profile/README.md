@@ -20,8 +20,6 @@ A **multi-language SDK** for bypassing anti-bot protection systems including **D
 
 Perfect for **web scraping**, **automation**, **testing**, and **bot development** that requires bypassing bot detection systems.
 
-![PerimeterX Demo](parallax_perimeterx.gif)
-
 ---
 
 ## 🚀 Quick Start
@@ -33,6 +31,8 @@ Get started with Parallax Systems in under 5 minutes:
 3. **Get your free trial** - Start testing immediately
 4. **[Install the SDK](#-installation)** - Choose your preferred language
 5. **Solve all anti-bots in seconds** - Start bypassing DataDome, PerimeterX & more
+
+![PerimeterX Demo](parallax_perimeterx.gif)
 
 ---
 
