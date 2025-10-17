@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="logo.png" alt="Parallax Systems Logo" width="100"/>
-
 # Parallax Systems SDK
 
 **Request-based anti-bot bypass solution for DataDome, PerimeterX & CAPTCHA challenges.**
