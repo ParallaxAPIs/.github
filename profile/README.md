@@ -195,11 +195,11 @@ We provide solutions for all challenges served by these leading anti-bot systems
 
 **What we solve:**
 
-- ✅ **Slider Captchas** - Automatic slider puzzle solving (~200ms)
+- ✅ **Slider Captchas** - Automatic slider puzzle solving
 - ✅ **Interstitial Pages** - Solve interstitial challenge pages
 - ✅ **Tags Payload** - Create valid tags payloads
-- ✅ **User Agent Generation** - Generate matching user agents
 - ✅ **Cookie Generation** - Valid DataDome cookies in ~200ms
+- ✅ **User Agent Generation** - Generate matching user agents
 
 ### PerimeterX
 
@@ -207,38 +207,15 @@ We provide solutions for all challenges served by these leading anti-bot systems
 
 - ✅ **Cookie Generation** - Valid _px3 cookies in ~350-400ms
 - ✅ **Challenge Solver** - Solve Hold Captcha challenges
-- ✅ **Sensor Data** - Generate valid sensor data
 - ✅ **Vid & Cts Tokens** - Complete token generation
-
-### Akamai Bot Manager
-
-**What we solve:**
-
-- ✅ **Sensor Data Generation** - Generate valid _abck cookies with sensor data
-- ✅ **SBSD Payloads** - Generate valid SBSD payloads
-
-### Incapsula (Imperva)
-
-**What we solve:**
-
-- ✅ **Reese84 Sensors** - Generate valid Reese84 sensor data
-- ✅ **UTMVC Cookies** - Generate valid UTMVC tokens
-- ✅ **Dynamic Script Handling** - Process dynamically loaded protection scripts
-
-### Kasada
-
-**What we solve:**
-
-- ✅ **Payload Generation (CT)** - Generate valid x-kpsdk-ct tokens
-- ✅ **Proof-of-Work (CD)** - Solve POW challenges for x-kpsdk-cd tokens
-- ✅ **Header Generation** - Create all required Kasada headers (x-kpsdk-*)
+- ✅ **Sensor Data** - Generate valid sensor data
 
 ### Additional Features
 
 - 🌍 **Geo-Targeting** - Support for all regions worldwide
 - 🔌 **Proxy Support** - HTTP/HTTPS/SOCKS5 compatible
-- ⚡ **High Performance** - Sub-second response times
-- 🔒 **Secure** - End-to-end encryption, zero data retention
+- ⚡ **Lightning Fast** - Sub-second response times for both solutions
+- 🔒 **Enterprise Security** - End-to-end encryption, zero data retention policy
 
 ### Use Cases
 
