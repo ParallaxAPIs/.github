@@ -8,7 +8,7 @@
 [![Website](https://img.shields.io/badge/Website-Visit-00D4FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.parallaxsystems.io)
 [![License](https://img.shields.io/badge/License-Commercial-yellow?style=for-the-badge)](https://www.parallaxsystems.io)
 
-[Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://discord.com/invite/2QWbHcmWnf)
+[Quick Start](#-quick-start) • [Installation](#-installation) • [Bot Protection](#️-bot-protection-systems-we-bypass) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://discord.com/invite/2QWbHcmWnf)
 
 </div>
 
@@ -187,40 +187,58 @@ print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']
 
 ---
 
-## ✨ Features
+## 🛡️ Bot Protection Systems We Bypass
 
-<table>
-<tr>
-<th width="30%">Feature</th>
-<th width="35%">DataDome</th>
-<th width="35%">PerimeterX</th>
-</tr>
-<tr>
-<td><strong>Cookie Generation</strong></td>
-<td align="center">✅ ~200ms</td>
-<td align="center">✅ ~350-400ms</td>
-</tr>
-<tr>
-<td><strong>User Agent Generation</strong></td>
-<td align="center">✅ Included</td>
-<td align="center">❌ Not needed</td>
-</tr>
-<tr>
-<td><strong>Challenge Solver</strong></td>
-<td align="center">✅ Captcha & Interstitial</td>
-<td align="center">✅ Hold Captcha</td>
-</tr>
-<tr>
-<td><strong>Proxy Support</strong></td>
-<td align="center">✅ HTTP/HTTPS/SOCKS5</td>
-<td align="center">✅ HTTP/HTTPS/SOCKS5</td>
-</tr>
-<tr>
-<td><strong>Geo-Targeting</strong></td>
-<td align="center">✅ All regions</td>
-<td align="center">✅ All regions</td>
-</tr>
-</table>
+We provide solutions for all challenges served by these leading anti-bot systems.
+
+### DataDome
+
+**What we solve:**
+
+- ✅ **Slider Captchas** - Automatic slider puzzle solving (~200ms)
+- ✅ **Interstitial Pages** - Solve interstitial challenge pages
+- ✅ **Tags Payload** - Create valid tags payloads
+- ✅ **User Agent Generation** - Generate matching user agents
+- ✅ **Cookie Generation** - Valid DataDome cookies in ~200ms
+
+### PerimeterX
+
+**What we solve:**
+
+- ✅ **Cookie Generation** - Valid _px3 cookies in ~350-400ms
+- ✅ **Challenge Solver** - Solve Hold Captcha challenges
+- ✅ **Sensor Data** - Generate valid sensor data
+- ✅ **Vid & Cts Tokens** - Complete token generation
+
+### Akamai Bot Manager
+
+**What we solve:**
+
+- ✅ **Sensor Data Generation** - Generate valid _abck cookies with sensor data
+- ✅ **SBSD Payloads** - Generate valid SBSD payloads
+
+### Incapsula (Imperva)
+
+**What we solve:**
+
+- ✅ **Reese84 Sensors** - Generate valid Reese84 sensor data
+- ✅ **UTMVC Cookies** - Generate valid UTMVC tokens
+- ✅ **Dynamic Script Handling** - Process dynamically loaded protection scripts
+
+### Kasada
+
+**What we solve:**
+
+- ✅ **Payload Generation (CT)** - Generate valid x-kpsdk-ct tokens
+- ✅ **Proof-of-Work (CD)** - Solve POW challenges for x-kpsdk-cd tokens
+- ✅ **Header Generation** - Create all required Kasada headers (x-kpsdk-*)
+
+### Additional Features
+
+- 🌍 **Geo-Targeting** - Support for all regions worldwide
+- 🔌 **Proxy Support** - HTTP/HTTPS/SOCKS5 compatible
+- ⚡ **High Performance** - Sub-second response times
+- 🔒 **Secure** - End-to-end encryption, zero data retention
 
 ### Use Cases
 
