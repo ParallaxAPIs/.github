@@ -8,7 +8,7 @@
 [![Website](https://img.shields.io/badge/Website-Visit-00D4FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.parallaxsystems.io)
 [![License](https://img.shields.io/badge/License-Commercial-yellow?style=for-the-badge)](https://www.parallaxsystems.io)
 
-[Quick Start](#-quick-start) • [Installation](#-installation) • [Bot Protection](#️-bot-protection-systems-we-bypass) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://discord.com/invite/2QWbHcmWnf)
+[Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://discord.com/invite/2QWbHcmWnf)
 
 </div>
 
@@ -187,7 +187,7 @@ print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']
 
 ---
 
-## 🛡️ Bot Protection Systems We Bypass
+## ✨ Features
 
 We provide solutions for all challenges served by these leading anti-bot systems.
 
