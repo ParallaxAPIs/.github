@@ -47,6 +47,46 @@ Get started with Parallax Systems in under 5 minutes:
 
 ---
 
+## ✨ Features
+
+We provide solutions for all challenges served by these leading anti-bot systems.
+
+### DataDome
+
+**What we solve:**
+
+- ✅ **Slider Captchas** - Automatic slider puzzle solving
+- ✅ **Interstitial Pages** - Solve interstitial challenge pages
+- ✅ **Tags Payload** - Create valid tags payloads
+- ✅ **Cookie Generation** - Valid DataDome cookies in ~200ms
+- ✅ **User Agent Generation** - Generate matching user agents
+
+### PerimeterX
+
+**What we solve:**
+
+- ✅ **Cookie Generation** - Valid _px3 cookies in ~350-400ms
+- ✅ **Challenge Solver** - Solve Hold Captcha challenges
+- ✅ **Vid & Cts Tokens** - Complete token generation
+- ✅ **Sensor Data** - Generate valid sensor data
+
+### Additional Features
+
+- 🌍 **Geo-Targeting** - Support for all regions worldwide
+- 🔌 **Proxy Support** - HTTP/HTTPS/SOCKS5 compatible
+- ⚡ **Lightning Fast** - Sub-second response times for both solutions
+- 🔒 **Enterprise Security** - End-to-end encryption, zero data retention policy
+
+### Use Cases
+
+- **Web Scraping** - Bypass bot detection for data collection
+- **Automation Testing** - Test websites protected by anti-bot systems
+- **Price Monitoring** - Monitor competitor prices without detection
+- **SEO Tools** - Build SEO tools that work with protected sites
+- **E-commerce Bots** - Automate purchase flows on protected platforms
+
+---
+
 ## 💻 Code Examples
 
 ### DataDome Cookie Generation
@@ -184,46 +224,6 @@ print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']
 ```
 
 </details>
-
----
-
-## ✨ Features
-
-We provide solutions for all challenges served by these leading anti-bot systems.
-
-### DataDome
-
-**What we solve:**
-
-- ✅ **Slider Captchas** - Automatic slider puzzle solving
-- ✅ **Interstitial Pages** - Solve interstitial challenge pages
-- ✅ **Tags Payload** - Create valid tags payloads
-- ✅ **Cookie Generation** - Valid DataDome cookies in ~200ms
-- ✅ **User Agent Generation** - Generate matching user agents
-
-### PerimeterX
-
-**What we solve:**
-
-- ✅ **Cookie Generation** - Valid _px3 cookies in ~350-400ms
-- ✅ **Challenge Solver** - Solve Hold Captcha challenges
-- ✅ **Vid & Cts Tokens** - Complete token generation
-- ✅ **Sensor Data** - Generate valid sensor data
-
-### Additional Features
-
-- 🌍 **Geo-Targeting** - Support for all regions worldwide
-- 🔌 **Proxy Support** - HTTP/HTTPS/SOCKS5 compatible
-- ⚡ **Lightning Fast** - Sub-second response times for both solutions
-- 🔒 **Enterprise Security** - End-to-end encryption, zero data retention policy
-
-### Use Cases
-
-- **Web Scraping** - Bypass bot detection for data collection
-- **Automation Testing** - Test websites protected by anti-bot systems
-- **Price Monitoring** - Monitor competitor prices without detection
-- **SEO Tools** - Build SEO tools that work with protected sites
-- **E-commerce Bots** - Automate purchase flows on protected platforms
 
 ---
 
