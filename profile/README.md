@@ -87,6 +87,49 @@ We provide solutions for all challenges served by these leading anti-bot systems
 
 ---
 
+## Why Choose Parallax?
+
+<table>
+<tr>
+<td width="50%">
+
+### ⚡ Lightning Fast
+• DataDome cookies in **~200ms**
+• PerimeterX cookies in **~350-400ms**
+• Request-based, no browser overhead
+
+</td>
+<td width="50%">
+
+### 🛠️ Developer Friendly
+• Simple REST API
+• 4+ language SDKs
+• Comprehensive documentation
+
+</td>
+</tr>
+<tr>
+<td width="50%">
+
+### 🔒 Enterprise Security
+• End-to-end encryption
+• SOC 2 compliant infrastructure
+• Zero data retention policy
+
+</td>
+<td width="50%">
+
+### 📦 Production Ready
+• 99.9% uptime SLA
+• Scalable infrastructure
+• 24/7 support available
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 💻 Code Examples
 
 ### DataDome Cookie Generation
@@ -224,49 +267,6 @@ print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']
 ```
 
 </details>
-
----
-
-## Why Choose Parallax?
-
-<table>
-<tr>
-<td width="50%">
-
-### ⚡ Lightning Fast
-• DataDome cookies in **~200ms**
-• PerimeterX cookies in **~350-400ms**
-• Request-based, no browser overhead
-
-</td>
-<td width="50%">
-
-### 🛠️ Developer Friendly
-• Simple REST API
-• 4+ language SDKs
-• Comprehensive documentation
-
-</td>
-</tr>
-<tr>
-<td width="50%">
-
-### 🔒 Enterprise Security
-• End-to-end encryption
-• SOC 2 compliant infrastructure
-• Zero data retention policy
-
-</td>
-<td width="50%">
-
-### 📦 Production Ready
-• 99.9% uptime SLA
-• Scalable infrastructure
-• 24/7 support available
-
-</td>
-</tr>
-</table>
 
 ---
 
