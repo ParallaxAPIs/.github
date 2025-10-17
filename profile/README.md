@@ -1,6 +1,8 @@
 <div align="center">
 
-<img src="logo.png" alt="Parallax Systems Logo" width="80" style="display: inline-block; vertical-align: middle;"/> <h1 style="display: inline-block; vertical-align: middle; margin: 0;">Parallax Systems SDK</h1>
+<img src="logo.png" alt="Parallax Systems Logo" width="100"/>
+
+# Parallax Systems SDK
 
 **Request-based anti-bot bypass solution for DataDome, PerimeterX & CAPTCHA challenges.**
 
@@ -8,7 +10,7 @@
 [![Website](https://img.shields.io/badge/Website-Visit-00D4FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.parallaxsystems.io)
 [![License](https://img.shields.io/badge/License-Commercial-yellow?style=for-the-badge)](https://www.parallaxsystems.io)
 
-[Features](#-features) • [Installation](#-installation) • [Quick Start](#-quick-start) • [Documentation](#-documentation) • [Discord](https://discord.com/invite/2QWbHcmWnf)
+[Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://discord.com/invite/2QWbHcmWnf)
 
 </div>
 
@@ -24,14 +26,15 @@ Perfect for **web scraping**, **automation**, **testing**, and **bot development
 
 ---
 
-## 🔑 Getting API Access
+## 🚀 Quick Start
 
-To use the Parallax Systems SDK, you'll need an API key. We offer **free trials** to get you started.
+Get started with Parallax Systems in under 5 minutes:
 
-**Get your API key:**
-1. Join our [Discord](https://discord.com/invite/2QWbHcmWnf)
-2. Create a ticket
-3. Get started with your free trial
+1. **Join our [Discord](https://discord.com/invite/2QWbHcmWnf)** - Connect with our community
+2. **Create a ticket** - Request your API key
+3. **Get your free trial** - Start testing immediately
+4. **[Install the SDK](#-installation)** - Choose your preferred language
+5. **Solve all anti-bots in seconds** - Start bypassing DataDome, PerimeterX & more
 
 ---
 
@@ -46,7 +49,7 @@ To use the Parallax Systems SDK, you'll need an API key. We offer **free trials*
 
 ---
 
-## 🚀 Quick Start
+## 💻 Code Examples
 
 ### DataDome Cookie Generation
 
