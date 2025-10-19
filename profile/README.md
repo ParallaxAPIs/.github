@@ -291,49 +291,6 @@ print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']
 
 ---
 
-## 💼 Get Started
-
-<div align="center">
-
-### Ready to bypass anti-bot protection?
-
-[![Get API Key](https://img.shields.io/badge/Get_API_Key-Start_Free_Trial-00D4FF?style=for-the-badge&logo=key&logoColor=white)](https://www.parallaxsystems.io/signup)
-[![View Pricing](https://img.shields.io/badge/View_Pricing-Transparent-green?style=for-the-badge&logo=pricetag&logoColor=white)](https://www.parallaxsystems.io/pricing)
-[![Join Discord](https://img.shields.io/badge/Join_Discord-Get_Help-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/2QWbHcmWnf)
-
-</div>
-
----
-
-## 🛠️ Support
-
-<table>
-<tr>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/color/96/000000/discord-logo.png" width="48"/><br/>
-<strong>Discord Community</strong><br/>
-<a href="https://discord.com/invite/2QWbHcmWnf">Join our server</a>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/color/96/000000/domain.png" width="48"/><br/>
-<strong>Website</strong><br/>
-<a href="https://www.parallaxsystems.io">parallaxsystems.io</a>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/color/96/000000/email.png" width="48"/><br/>
-<strong>Email Support</strong><br/>
-<a href="mailto:support@parallaxsystems.io">support@parallaxsystems.io</a>
-</td>
-<td align="center" width="25%">
-<img src="https://img.icons8.com/color/96/000000/book.png" width="48"/><br/>
-<strong>Documentation</strong><br/>
-<a href="https://docs.parallaxsystems.io">docs.parallaxsystems.io</a>
-</td>
-</tr>
-</table>
-
----
-
 <div align="center">
 
 © 2025 Parallax Systems. All rights reserved.
