@@ -136,6 +136,60 @@ We provide solutions for all challenges served by these leading anti-bot systems
 
 ---
 
+## 🚀 Why Request-Based?
+
+<table>
+<tr>
+<th width="50%">🌐 Browser-Based Solutions</th>
+<th width="50%">⚡ Request-Based (Parallax)</th>
+</tr>
+<tr>
+<td valign="top">
+
+**Challenges:**
+- ❌ Slow performance (2-5+ seconds per request)
+- ❌ High resource consumption (RAM, CPU)
+- ❌ Complex infrastructure requirements
+- ❌ Difficult to scale horizontally
+- ❌ Browser detection & fingerprinting issues
+- ❌ Maintenance overhead for browser versions
+
+</td>
+<td valign="top">
+
+**Benefits:**
+- ✅ Lightning fast (200-400ms response time)
+- ✅ Minimal resource usage
+- ✅ Simple API integration
+- ✅ Easily scales to millions of requests
+- ✅ No browser fingerprinting concerns
+- ✅ Zero maintenance overhead
+
+</td>
+</tr>
+<tr>
+<td valign="top">
+
+**Use When:**
+- You need full browser rendering
+- JavaScript-heavy interactions required
+- Visual verification needed
+
+</td>
+<td valign="top">
+
+**Use When:**
+- Speed and efficiency are priorities
+- High-volume operations required
+- Simple cookie/token generation needed
+- Infrastructure costs matter
+
+</td>
+</tr>
+</table>
+
+---
+
 ## 💻 Code Examples
 
 ### DataDome Cookie Generation
