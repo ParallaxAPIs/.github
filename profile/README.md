@@ -128,7 +128,7 @@ We provide solutions for all challenges served by these leading anti-bot systems
 ### 📦 Production Ready
 • 99.9% uptime SLA
 • Scalable infrastructure
-• 24/7 support available
+• 24/7 support on Discord available
 
 </td>
 </tr>
