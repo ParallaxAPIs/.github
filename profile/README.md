@@ -171,9 +171,8 @@ We provide solutions for all challenges served by these leading anti-bot systems
 <td valign="top">
 
 **Use When:**
-- You need full browser rendering
-- JavaScript-heavy interactions required
-- Visual verification needed
+- You want to be slower than your competitors
+- You want to get your device banned
 
 </td>
 <td valign="top">
