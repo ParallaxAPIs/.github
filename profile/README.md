@@ -1,6 +1,6 @@
 <div align="center">
 
-# Parallax Systems SDK
+# Parallax API SDK's
 
 **Request-based anti-bot bypass solution for DataDome, PerimeterX & CAPTCHA challenges.**
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 🎯 What is Parallax Systems SDK?
+## 🎯 What is Parallax API SDK's?
 
 A **multi-language SDK** for bypassing anti-bot protection systems including **DataDome** and **PerimeterX**. Generate valid authentication cookies through a simple request-based API without the overhead of browser automation or headless browsers.
 
@@ -24,7 +24,7 @@ Perfect for **web scraping**, **automation**, **testing**, and **bot development
 
 ## 🚀 Quick Start
 
-Get started with Parallax Systems in under 5 minutes:
+Get started with Parallax API SDK's in under 5 minutes:
 
 1. **Join our [Discord](https://discord.com/invite/2QWbHcmWnf)** - Connect with our community
 2. **Create a ticket** - Request your API key
