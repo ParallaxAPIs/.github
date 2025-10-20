@@ -120,7 +120,6 @@ We provide solutions for all challenges served by these leading anti-bot systems
 ### 🔒 Enterprise Security
 • End-to-end encryption
 • SOC 2 compliant infrastructure
-• Zero data retention policy
 
 </td>
 <td width="50%">
