@@ -4,11 +4,11 @@
 
 **Request-based anti-bot bypass solution for DataDome & PerimeterX.**
 
-[![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/invite/2QWbHcmWnf)
+[![Discord](https://img.shields.io/badge/Discord-Join%20Us-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://www.parallaxsystems.io/join?s=gh)
 [![Website](https://img.shields.io/badge/Website-Visit-00D4FF?style=for-the-badge&logo=google-chrome&logoColor=white)](https://www.parallaxsystems.io)
 [![License](https://img.shields.io/badge/License-Commercial-yellow?style=for-the-badge)](https://www.parallaxsystems.io)
 
-[Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://discord.com/invite/2QWbHcmWnf)
+[Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://www.parallaxsystems.io/join?s=gh)
 
 </div>
 
@@ -26,7 +26,7 @@ Perfect for **web scraping**, **automation**, **testing**, and **bot development
 
 Get started with Parallax API SDK's in under 5 minutes:
 
-1. **Join our [Discord](https://discord.com/invite/2QWbHcmWnf)** - Connect with our community
+1. **Join our [Discord](https://www.parallaxsystems.io/join?s=gh)** - Connect with our community
 2. **Create a ticket** - Request your API key
 3. **Get your free trial** - Start testing immediately
 4. **[Install the SDK](#-installation)** - Choose your preferred language
