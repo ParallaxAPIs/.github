@@ -205,15 +205,20 @@ import (
 func main() {
     sdk := parallaxsdk.NewDatadomeSDK("YOUR_API_KEY", "")
 
-    response, _ := sdk.GenerateDatadomeCookie(parallaxsdk.TaskDatadomeCookie{
-        Site:        "example",
-        Region:      "us",
-        Proxyregion: "us",
-        Proxy:       "http://user:pass@proxy:port",
-        Pd:          parallaxsdk.PD_Init,
+    challengeURL := "https://geo.captcha-delivery.com/captcha/?initialCid=initialCid&cid=cid&referer=referer&hash=hash&t=t&s=s&e=e"
+    cookie := "cookie"
+    taskData, productType, _ := parallaxsdk.ParseChallengeURL(challengeURL, cookie)
+
+    cookieResp, _ := sdk.GenerateDatadomeCookie(parallaxsdk.TaskDatadomeCookie{
+        Site: "vinted",
+        Region: "pl",
+        Data: *taskData,
+        Pd: productType,
+        Proxy: "http://user:pas@addr:port",
+        Proxyregion: "eu",
     })
 
-    fmt.Printf("Cookie: %s\n", response.Message)
+    fmt.Println(cookieResp.Message)
 }
 ```
 
@@ -223,17 +228,22 @@ func main() {
 <summary><strong>TypeScript Example</strong></summary>
 
 ```typescript
-import { DatadomeSDK, ProductType } from "parallax-sdk-ts";
+import DatadomeSDK from "parallax-sdk-ts";
 
 const sdk = new DatadomeSDK({ apiKey: "YOUR_API_KEY" });
 
+const [taskData, productType] = sdk.parseChallengeUrl(
+    "https://geo.captcha-delivery.com/captcha/?initialCid=initialCid&cid=cid&referer=referer&hash=hash&t=t&s=s&e=e",
+    "cookie",
+);
+
 const cookie = await sdk.generateCookie({
-    site: "example",
-    region: "us",
-    proxy: "http://user:pass@proxy:port",
-    proxyregion: "us",
-    pd: ProductType.Init,
-    data: {} as any
+    site: "vinted",
+    region: "pl",
+    data: taskData,
+    pd: productType,
+    proxy: "http://user:pas@addr:port",
+    proxyregion: "eu"
 });
 
 console.log(cookie.message);
@@ -245,19 +255,27 @@ console.log(cookie.message);
 <summary><strong>Python Example</strong></summary>
 
 ```python
-from parallax_sdk_py import DatadomeSDK, ProductType
+from parallax_sdk_py.src.datadome import AsyncDatadomeSDK
+from parallax_sdk_py.src.sdk import SDKConfig
+from parallax_sdk_py.src.tasks import TaskGenerateDatadomeCookie
 
-sdk = DatadomeSDK(host="", api_key="YOUR_API_KEY")
+cfg = SDKConfig(host="dd.parallaxsystems.io", api_key="YOUR_API_KEY")
 
-response = await sdk.generate_cookie(
-    site="example",
-    region="us",
-    proxy="http://user:pass@proxy:port",
-    proxyregion="us",
-    pd=ProductType.Init
-)
+async with AsyncDatadomeSDK(cfg=cfg) as sdk:
+    challenge_url = "https://geo.captcha-delivery.com/captcha/?initialCid=initialCid&cid=cid&referer=referer&hash=hash&t=t&s=s&e=e"
+    cookie = "cookie"
+    task_data, product_type = sdk.parse_challenge_url(challenge_url, cookie)
 
-print(response.message)
+    cookie_response = await sdk.generate_cookie(TaskGenerateDatadomeCookie(
+        site="vinted",
+        region="pl",
+        data=task_data,
+        pd=product_type,
+        proxy="http://user:pas@addr:port",
+        proxyregion="eu"
+    ))
+
+    print(cookie_response['cookie'])
 ```
 
 </details>
@@ -268,17 +286,17 @@ print(response.message)
 <summary><strong>Go Example</strong></summary>
 
 ```go
-pxSDK := parallax.NewPerimeterxSDK("YOUR_API_KEY", "")
+sdk := parallaxsdk.NewPerimeterxSDK("YOUR_API_KEY", "")
 
-response, _ := pxSDK.GenerateCookies(parallax.TaskGeneratePXCookies{
-    Site:        "example",
-    Region:      "com",
-    Proxyregion: "us",
-    Proxy:       "http://user:pass@proxy:port",
+result, _ := sdk.GenerateCookies(parallaxsdk.TaskGeneratePXCookies{
+    Proxy: "http://user:pas@addr:port",
+    Proxyregion: "eu",
+    Region: "com",
+    Site: "stockx",
 })
 
 fmt.Printf("_px3: %s\n_pxvid: %s\npxcts: %s\n",
-    response.Cookie, response.Vid, response.Cts)
+    result.Cookie, result.Vid, result.Cts)
 ```
 
 </details>
@@ -287,18 +305,19 @@ fmt.Printf("_px3: %s\n_pxvid: %s\npxcts: %s\n",
 <summary><strong>TypeScript Example</strong></summary>
 
 ```typescript
-import { PerimeterxSDK } from "parallax-sdk-ts";
+import PerimeterxSDK from "parallax-sdk-ts";
+import type { TaskGeneratePXCookies } from "parallax-sdk-ts";
 
 const sdk = new PerimeterxSDK({ apiKey: "YOUR_API_KEY" });
 
 const result = await sdk.generateCookies({
-    site: "example",
+    proxy: "http://user:pas@addr:port",
+    proxyregion: "eu",
     region: "com",
-    proxy: "http://user:pass@proxy:port",
-    proxyregion: "us"
-});
+    site: "stockx"
+} satisfies TaskGeneratePXCookies);
 
-console.log(`_px3: ${result.cookie}\n_pxvid: ${result.vid}\npxcts: ${result.cts}`);
+console.log(JSON.stringify(result));
 ```
 
 </details>
@@ -307,20 +326,21 @@ console.log(`_px3: ${result.cookie}\n_pxvid: ${result.vid}\npxcts: ${result.cts}
 <summary><strong>Python Example</strong></summary>
 
 ```python
-from src import PerimeterxSDK, TaskGeneratePXCookies
+from parallax_sdk_py.src.perimeterx import AsyncPerimeterxSDK
+from parallax_sdk_py.src.sdk import SDKConfig
+from parallax_sdk_py.src.tasks import TaskGeneratePXCookies
 
-sdk = PerimeterxSDK(host="", api_key="YOUR_API_KEY")
+cfg = SDKConfig(host="api.parallaxsystems.io", api_key="YOUR_API_KEY")
 
-task = TaskGeneratePXCookies(
-    site="example",
-    region="com",
-    proxy="http://user:pass@proxy:port",
-    proxyregion="us"
-)
+async with AsyncPerimeterxSDK(cfg=cfg) as sdk:
+    result = await sdk.generate_cookies(TaskGeneratePXCookies(
+        proxy="http://user:pas@addr:port",
+        proxyregion="eu",
+        region="com",
+        site="stockx"
+    ))
 
-result = await sdk.generate_cookies(task)
-
-print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']}")
+    print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']}")
 ```
 
 </details>
