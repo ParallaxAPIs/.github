@@ -280,14 +280,6 @@ print(f"_px3: {result['cookie']}\n_pxvid: {result['vid']}\npxcts: {result['cts']
 | Python | [Python SDK Guide](parallax-sdk-py/README.md) | Asyncio support |
 | Playwright | [Playwright SDK Guide](parallax-sdk-playwright/README.md) | Browser integration |
 
-### Advanced Topics
-
-- **[Authentication](docs/authentication.md)** - API key management and security
-- **[Proxy Configuration](docs/proxies.md)** - Proxy setup and best practices
-- **[Error Handling](docs/errors.md)** - Error codes and troubleshooting
-- **[Rate Limits](docs/rate-limits.md)** - Understanding request limits and quotas
-- **[Best Practices](docs/best-practices.md)** - Production deployment guidelines
-
 ---
 
 <div align="center">
