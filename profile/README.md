@@ -73,8 +73,8 @@ We provide solutions for all challenges served by these leading anti-bot systems
 
 - 🌍 **Geo-Targeting** - Support for all regions worldwide
 - 🔌 **Proxy Support** - HTTP/HTTPS/SOCKS5 compatible
-- ⚡ **Lightning Fast** - Sub-second response times for both solutions
-- 🔒 **Enterprise Security** - End-to-end encryption, zero data retention policy
+- ⚡ **Lightning Fast** - Sub-millisecond response times for our solutions
+- 🔒 **Enterprise Security** - End-to-end encryption
 
 ### Use Cases
 
