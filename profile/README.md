@@ -68,7 +68,6 @@ We provide solutions for all challenges served by these leading anti-bot systems
 - ✅ **Cookie Generation** - Valid _px3 cookies in ~350-400ms
 - ✅ **Challenge Solver** - Solve Hold Captcha challenges
 - ✅ **Vid & Cts Tokens** - Complete token generation
-- ✅ **Sensor Data** - Generate valid sensor data
 
 ### Additional Features
 
