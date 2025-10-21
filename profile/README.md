@@ -354,10 +354,10 @@ async with AsyncPerimeterxSDK(cfg=cfg) as sdk:
 
 | Language | Documentation | Examples |
 |----------|---------------|----------|
-| Go | [Go SDK Guide](parallaxapis-sdk-go/README.md) | Complete API reference |
-| TypeScript | [TypeScript SDK Guide](parallaxapis-sdk-ts/README.md) | Async/await patterns |
-| Python | [Python SDK Guide](parallaxapis-sdk-py/README.md) | Asyncio support |
-| Playwright | [Playwright SDK Guide](parallaxapis-sdk-playwright/README.md) | Browser integration |
+| Go | [Go SDK Guide](https://github.com/ParallaxAPIs/parallaxapis-sdk-go/README.md) | Complete API reference |
+| TypeScript | [TypeScript SDK Guide](https://github.com/ParallaxAPIs/parallaxapis-sdk-ts/README.md) | Async/await patterns |
+| Python | [Python SDK Guide](https://github.com/ParallaxAPIs/parallaxapis-sdk-py/README.md) | Asyncio support |
+| Playwright | [Playwright SDK Guide](https://github.com/ParallaxAPIs/parallaxapis-sdk-playwright/README.md) | Browser integration |
 
 ---
 
