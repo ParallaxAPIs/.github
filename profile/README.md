@@ -39,10 +39,10 @@ Get started with ParallaxAPIs SDK's in under 5 minutes:
 
 | Language | Package | Installation |
 |----------|---------|--------------|
-| **Go** | [parallax-sdk-go](https://github.com/ParallaxAPIs/parallax-sdk-go) | `go get github.com/ParallaxAPIs/parallax-sdk-go` |
-| **TypeScript** | [parallax-sdk-ts](https://github.com/ParallaxAPIs/parallax-sdk-ts) | `npm install parallaxapis-sdk-ts` |
-| **Python** | [parallax-sdk-py](https://github.com/ParallaxAPIs/parallax-sdk-py) | `pip install parallaxapis-sdk-py` |
-| **Playwright** | [parallax-sdk-playwright](https://github.com/ParallaxAPIs/parallax-sdk-playwright) | `npm install parallaxapis-sdk-playwright` |
+| **Go** | [parallaxapis-sdk-go](https://github.com/ParallaxAPIs/parallaxapis-sdk-go) | `go get github.com/ParallaxAPIs/parallax-sdk-go` |
+| **TypeScript** | [parallaxapis-sdk-ts](https://github.com/ParallaxAPIs/parallaxapis-sdk-ts) | `npm install parallaxapis-sdk-ts` |
+| **Python** | [parallaxapis-sdk-py](https://github.com/ParallaxAPIs/parallaxapis-sdk-py) | `pip install parallaxapis-sdk-py` |
+| **Playwright** | [parallaxapis-sdk-playwright](https://github.com/ParallaxAPIs/parallaxapis-sdk-playwright) | `npm install parallaxapis-sdk-playwright` |
 
 ---
 
@@ -65,8 +65,9 @@ We provide solutions for all challenges served by these leading anti-bot systems
 **What we solve:**
 
 - ✅ **Cookie Generation** - Valid _px3 cookies in ~350-400ms
-- ✅ **Challenge Solver** - Solve Hold Captcha challenges
-- ✅ **Vid & Cts Tokens** - Complete token generation
+- ✅ **Web and Mobile supported** - Generation on any device
+- ✅ **Challenge Solver** - Automatic HoldCaptcha solving
+- ✅ **_pxvid, pxcts & _pxhd Tokens** - Complete token generation
 
 ### Additional Features
 
@@ -353,16 +354,16 @@ async with AsyncPerimeterxSDK(cfg=cfg) as sdk:
 
 | Language | Documentation | Examples |
 |----------|---------------|----------|
-| Go | [Go SDK Guide](parallax-sdk-go/README.md) | Complete API reference |
-| TypeScript | [TypeScript SDK Guide](parallax-sdk-ts/README.md) | Async/await patterns |
-| Python | [Python SDK Guide](parallax-sdk-py/README.md) | Asyncio support |
-| Playwright | [Playwright SDK Guide](parallax-sdk-playwright/README.md) | Browser integration |
+| Go | [Go SDK Guide](parallaxapis-sdk-go/README.md) | Complete API reference |
+| TypeScript | [TypeScript SDK Guide](parallaxapis-sdk-ts/README.md) | Async/await patterns |
+| Python | [Python SDK Guide](parallaxapis-sdk-py/README.md) | Asyncio support |
+| Playwright | [Playwright SDK Guide](parallaxapis-sdk-playwright/README.md) | Browser integration |
 
 ---
 
 <div align="center">
 
-© 2025 Parallax Systems. All rights reserved.
+© 2025 ParallaxSystems. All rights reserved.
 
 [Terms of Service](https://www.parallaxsystems.io/terms) • [Privacy Policy](https://www.parallaxsystems.io/privacy) • [Security](https://www.parallaxsystems.io/security)
 
