@@ -23,7 +23,7 @@ Perfect for **web scraping**, **automation**, **testing**, and **bot development
 
 ## 🚀 Quick Start
 
-Get started with Parallax API SDK's in under 5 minutes:
+Get started with ParallaxAPIs SDK's in under 5 minutes:
 
 1. **Join our [Discord](https://www.parallaxsystems.io/join?s=gh)** - Connect with our community
 2. **Create a ticket** - Request your API key
