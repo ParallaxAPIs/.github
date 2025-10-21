@@ -1,6 +1,6 @@
 <div align="center">
 
-# Parallax API SDK's
+# ParallaxAPIs SDK's
 
 **Request-based anti-bot bypass solution for DataDome & PerimeterX.**
 
