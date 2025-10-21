@@ -93,7 +93,7 @@ We provide solutions for all challenges served by these leading anti-bot systems
 
 ---
 
-## Why Choose Parallax?
+## Why Choose ParallaxAPIs?
 
 <table>
 <tr>
