@@ -297,6 +297,39 @@ with DatadomeSDK(cfg=cfg) as sdk:
 
 </details>
 
+<details>
+<summary><strong>Playwright Example</strong></summary>
+
+```javascript
+import DatadomeHandler from 'parallaxapis-sdk-playwright';
+
+async function main() {
+    const [page, browser] = await DatadomeHandler.init({
+        apiKey: "DD-KEY",
+        apiHost: "parallaxhost.com", //optional
+        proxy: `http://user:password@host:port`,
+        proxyRegion: "eu",
+        region: "com",
+        site: "website",
+    })
+
+    await page.goto('https://www.website.com/');
+    
+    /*
+    
+        You can use your browser solution however you want, ParallaxAPIs 
+        will handle the rest for you. 
+        
+    */
+    
+    await browser.close();
+}
+
+main().catch(console.error);
+```
+
+</details>
+
 ### PerimeterX Cookie Generation
 
 <details open>
@@ -413,6 +446,40 @@ async with AsyncPerimeterxSDK(cfg=cfg) as sdk:
     ))
 
     print(hold_captcha_result)
+```
+
+</details>
+
+<details>
+<summary><strong>Playwright Example</strong></summary>
+
+```javascript
+import { PerimeterxHandler } from 'parallaxapis-sdk-playwright';
+
+async function main() {
+    const [page, browser] = await PerimeterxHandler.init({
+        apiKey: "PX-KEY",
+        apiHost: "parallaxhost.com", //optional
+        proxy: `http://user:password@host:port`,
+        proxyRegion: "eu",
+        region: "com",
+        site: "website",
+        websiteUrl: "https://www.website.com/"
+    })
+
+    await page.goto('https://www.website.com/');
+    
+    /*
+    
+        You can use your browser solution however you want, ParallaxAPIs 
+        will handle the rest for you. 
+        
+    */
+    
+    await browser.close();
+}
+
+main().catch(console.error);
 ```
 
 </details>
