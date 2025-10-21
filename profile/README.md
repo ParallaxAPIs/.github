@@ -324,6 +324,21 @@ func main() {
     }
     
     fmt.Printf(result)
+
+    //holdcaptcha
+    holdCaptchaResult, err := sdk.GenerateHoldCaptcha(parallaxsdk.TaskGenerateHoldCaptcha{
+        Proxy: "http://user:pas@addr:port",
+        Proxyregion: "eu",
+        Region: "com",
+        Site: "site",
+        Data: result.Data,
+        PowPro: "",
+    })
+    if err != nil {
+        panic(err)
+    }
+    
+    fmt.Printf(holdCaptchaResult)
 }
 ```
 
@@ -348,6 +363,17 @@ const result = await sdk.generateCookies({
 } satisfies TaskGeneratePXCookies);
 
 console.log(JSON.stringify(result))
+
+//holdcaptcha
+const holdCaptchaResult = await sdk.generateHoldCaptcha({
+    proxy: "http://user:pas@addr:port",
+    proxyregion: "eu",
+    region: "com",
+    site: "site",
+    data: result.data,
+} satisfies TaskGenerateHoldCaptcha);
+
+console.log(JSON.stringify(holdCaptchaResult))
 ```
 
 </details>
