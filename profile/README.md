@@ -194,7 +194,8 @@ We provide solutions for all challenges served by these leading anti-bot systems
 
 ## 💻 Code Examples
 
-### DataDome Cookie Generation
+### DD Cookie Generation
+----------
 
 <details open>
 <summary><strong>Go Example</strong></summary>
@@ -330,7 +331,7 @@ main().catch(console.error);
 
 </details>
 
-### PerimeterX Cookie Generation
+### PX Cookie Generation
 
 <details open>
 <summary><strong>Go Example</strong></summary>
