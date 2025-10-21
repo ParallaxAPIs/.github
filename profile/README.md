@@ -195,7 +195,7 @@ We provide solutions for all challenges served by these leading anti-bot systems
 ## 💻 Code Examples
 
 ### DD Cookie Generation
-----------
+---
 
 <details open>
 <summary><strong>Go Example</strong></summary>
@@ -332,6 +332,7 @@ main().catch(console.error);
 </details>
 
 ### PX Cookie Generation
+---
 
 <details open>
 <summary><strong>Go Example</strong></summary>
