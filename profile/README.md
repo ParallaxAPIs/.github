@@ -13,7 +13,7 @@
 
 ---
 
-## 🎯 What is Parallax API SDK's?
+## 🎯 What is ParallaxAPIs SDK's?
 
 **Multiple SDKs** for bypassing anti-bot protection systems including **DataDome** and **PerimeterX**. Generate valid antibot cookies through a simple request-based API without the overhead of browser automation or headless browsers.
 
