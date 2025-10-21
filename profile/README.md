@@ -361,6 +361,12 @@ async with AsyncPerimeterxSDK(cfg=cfg) as sdk:
 
 ---
 
+## 🏢 Enterprise
+
+Unlock enterprise-grade performance with custom solutions, expanded limits, and expert support. Contact us to learn more.
+
+---
+
 <div align="center">
 
 © 2025 ParallaxSystems. All rights reserved.
