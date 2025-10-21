@@ -40,9 +40,9 @@ Get started with ParallaxAPIs SDK's in under 5 minutes:
 | Language | Package | Installation |
 |----------|---------|--------------|
 | **Go** | [parallax-sdk-go](https://github.com/ParallaxAPIs/parallax-sdk-go) | `go get github.com/ParallaxAPIs/parallax-sdk-go` |
-| **TypeScript** | [parallax-sdk-ts](https://github.com/ParallaxAPIs/parallax-sdk-ts) | `npm install parallax-sdk-ts` |
-| **Python** | [parallax-sdk-py](https://github.com/ParallaxAPIs/parallax-sdk-py) | `pip install parallax-sdk-py` |
-| **Playwright** | [parallax-sdk-playwright](https://github.com/ParallaxAPIs/parallax-sdk-playwright) | `npm install parallax-sdk-playwright` |
+| **TypeScript** | [parallax-sdk-ts](https://github.com/ParallaxAPIs/parallax-sdk-ts) | `npm install parallaxapis-sdk-ts` |
+| **Python** | [parallax-sdk-py](https://github.com/ParallaxAPIs/parallax-sdk-py) | `pip install parallaxapis-sdk-py` |
+| **Playwright** | [parallax-sdk-playwright](https://github.com/ParallaxAPIs/parallax-sdk-playwright) | `npm install parallaxapis-sdk-playwright` |
 
 ---
 
