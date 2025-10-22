@@ -146,7 +146,7 @@ We provide solutions for all challenges served by these leading anti-bot systems
 <td valign="middle">
 
 **Challenges:**
-- ❌ Slow performance (2-5+ seconds per request)
+- ❌ Slow performance (5-10+ seconds per request)
 - ❌ High resource consumption (RAM, CPU)
 - ❌ Complex infrastructure requirements
 - ❌ Difficult to scale horizontally
