@@ -143,7 +143,7 @@ We provide solutions for all challenges served by these leading anti-bot systems
 <th width="50%">⚡ Request-Based (Parallax)</th>
 </tr>
 <tr>
-<td valign="top">
+<td valign="middle">
 
 **Challenges:**
 - ❌ Slow performance (2-5+ seconds per request)
@@ -171,7 +171,7 @@ We provide solutions for all challenges served by these leading anti-bot systems
 </td>
 </tr>
 <tr>
-<td valign="top">
+<td valign="middle">
 
 **Use When:**
 - You want to be slower than your competitors
