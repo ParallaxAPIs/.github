@@ -205,7 +205,7 @@ package main
 
 import (
     "fmt"
-    "github.com/parallaxsystems/parallax-sdk-go"
+    "github.com/parallaxsystems/parallaxapis-sdk-go"
 )
 
 func main() {
@@ -241,7 +241,7 @@ func main() {
 <summary><strong>TypeScript Example</strong></summary>
 
 ```typescript
-import DatadomeSDK from "parallaxapis-sdk-ts";
+import { DatadomeSDK } from "parallaxapis-sdk-ts";
 
 const sdk = new DatadomeSDK({ apiKey: "Key" });
 
@@ -268,9 +268,9 @@ console.log(cookie);
 <summary><strong>Python Example</strong></summary>
 
 ```python
-from parallax_sdk_py.src.datadome import DatadomeSDK
-from parallax_sdk_py.src.sdk import SDKConfig
-from parallax_sdk_py.src.tasks import TaskGenerateDatadomeCookie
+from parallax_sdk_py.datadome import DatadomeSDK
+from parallax_sdk_py.sdk import SDKConfig
+from parallax_sdk_py.tasks import TaskGenerateDatadomeCookie
 
 cfg = SDKConfig(
     host="host.com", # Optional
@@ -302,7 +302,7 @@ with DatadomeSDK(cfg=cfg) as sdk:
 <summary><strong>Playwright Example</strong></summary>
 
 ```javascript
-import DatadomeHandler from 'parallaxapis-sdk-playwright';
+import { DatadomeHandler } from 'parallaxapis-sdk-playwright';
 
 async function main() {
     const [page, browser] = await DatadomeHandler.init({
@@ -342,7 +342,7 @@ package main
 
 import (
     "fmt"
-    "github.com/parallaxsystems/parallax-sdk-go"
+    "github.com/parallaxsystems/parallaxapis-sdk-go"
 )
 
 func main() {
@@ -383,7 +383,7 @@ func main() {
 <summary><strong>TypeScript Example</strong></summary>
 
 ```typescript
-import PerimeterxSDK from "parallaxapis-sdk-ts";
+import { PerimeterxSDK } from "parallaxapis-sdk-ts";
 import type { TaskGenerateHoldCaptcha, TaskGeneratePXCookies } from "parallaxapis-sdk-ts";
 
 const sdk = new PerimeterxSDK({
@@ -417,9 +417,9 @@ console.log(JSON.stringify(holdCaptchaResult))
 <summary><strong>Python Example</strong></summary>
 
 ```python
-from parallax_sdk_py.src.perimeterx import AsyncPerimeterxSDK
-from parallax_sdk_py.src.sdk import SDKConfig
-from parallax_sdk_py.src.tasks import TaskGeneratePXCookies, TaskGenerateHoldCaptcha
+from parallax_sdk_py.perimeterx import AsyncPerimeterxSDK
+from parallax_sdk_py.sdk import SDKConfig
+from parallax_sdk_py.tasks import TaskGeneratePXCookies, TaskGenerateHoldCaptcha
 
 cfg = SDKConfig(
     host="host.com",
