@@ -268,9 +268,9 @@ console.log(cookie);
 <summary><strong>Python Example</strong></summary>
 
 ```python
-from parallax_sdk_py.datadome import DatadomeSDK
-from parallax_sdk_py.sdk import SDKConfig
-from parallax_sdk_py.tasks import TaskGenerateDatadomeCookie
+from parallaxapis_sdk_py.datadome import DatadomeSDK
+from parallaxapis_sdk_py.sdk import SDKConfig
+from parallaxapis_sdk_py.tasks import TaskGenerateDatadomeCookie
 
 cfg = SDKConfig(
     host="host.com", # Optional
@@ -417,9 +417,9 @@ console.log(JSON.stringify(holdCaptchaResult))
 <summary><strong>Python Example</strong></summary>
 
 ```python
-from parallax_sdk_py.perimeterx import AsyncPerimeterxSDK
-from parallax_sdk_py.sdk import SDKConfig
-from parallax_sdk_py.tasks import TaskGeneratePXCookies, TaskGenerateHoldCaptcha
+from parallaxapis_sdk_py.perimeterx import AsyncPerimeterxSDK
+from parallaxapis_sdk_py.sdk import SDKConfig
+from parallaxapis_sdk_py.tasks import TaskGeneratePXCookies, TaskGenerateHoldCaptcha
 
 cfg = SDKConfig(
     host="host.com",
