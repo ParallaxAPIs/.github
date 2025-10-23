@@ -205,7 +205,7 @@ package main
 
 import (
     "fmt"
-    "github.com/parallaxsystems/parallaxapis-sdk-go"
+    "github.com/ParallaxAPIs/parallaxapis-sdk-go"
 )
 
 func main() {
@@ -342,7 +342,7 @@ package main
 
 import (
     "fmt"
-    "github.com/parallaxsystems/parallaxapis-sdk-go"
+    "github.com/ParallaxAPIs/parallaxapis-sdk-go"
 )
 
 func main() {
