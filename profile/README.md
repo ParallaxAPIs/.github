@@ -305,7 +305,7 @@ with DatadomeSDK(cfg=cfg) as sdk:
 import { DatadomeHandler } from 'parallaxapis-sdk-playwright';
 
 async function main() {
-    const [page, browser] = await DatadomeHandler.init({
+    const { page, browser, handler, sdk } = await DatadomeHandler.init({
         apiKey: "DD-KEY",
         apiHost: "parallaxhost.com", //optional
         proxy: `http://user:password@host:port`,
@@ -459,7 +459,7 @@ async with AsyncPerimeterxSDK(cfg=cfg) as sdk:
 import { PerimeterxHandler } from 'parallaxapis-sdk-playwright';
 
 async function main() {
-    const [page, browser] = await PerimeterxHandler.init({
+    const { page, browser, handler, sdk } = await PerimeterxHandler.init({
         apiKey: "PX-KEY",
         apiHost: "parallaxhost.com", //optional
         proxy: `http://user:password@host:port`,
