@@ -10,6 +10,8 @@
 
 [Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://www.parallaxsystems.io/join?s=gh)
 
+![ParallaxAPIs Info](banner.png)
+
 </div>
 
 ---
