@@ -4,7 +4,7 @@
 
 **Request-based anti-bot bypass solution for DataDome & PerimeterX.**
 
-[![Discord](https://img.shields.io/static/v1?label=ParallaxSystems&message=1.860%20Members&color=111111&labelColor=5865F2&style=for-the-badge&logo=discord&logoColor=white)](https://www.parallaxsystems.io/join?s=gh)
+[![Discord](https://img.shields.io/static/v1?label=ParallaxSystems&message=1.860%20Members&color=111111&labelColor=5865F2&style=for-the-badge&logo=discord&logoColor=white)](https://www.parallaxsystems.io/join?s=gh) ![license MIT](https://img.shields.io/static/v1?label=license&message=MIT&color=99cc33&labelColor=555555) ![downloads](https://img.shields.io/static/v1?label=downloads&message=1.2k%2Fmonth&color=brightgreen&labelColor=555555)
 
 [Quick Start](#-quick-start) • [Installation](#-installation) • [Features](#-features) • [Code Examples](#-code-examples) • [Documentation](#-documentation) • [Discord](https://www.parallaxsystems.io/join?s=gh)
 
